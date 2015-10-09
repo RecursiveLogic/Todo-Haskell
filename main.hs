@@ -18,7 +18,7 @@ getCommand ('-':' ':num) todos =
         Just todos' -> prompt todos'
 getCommand "Q"      todos = return ()
 getCommand command  todos = do
-    putStrLn ("Invalid command: '" ++ command ++ "'")
+    putStrLn ("Invalid Command: '" ++ command ++ "'")
     prompt todos
 
 delete :: Int -> [a] -> Maybe [a]
@@ -30,7 +30,7 @@ delete n (a:as) = do
 delete _ [] = Nothing
 
 main = do
-    putStrLn "Commands:"
+    putStrLn "\nCommands:"
     putStrLn "+ <String>  - Add a To-do entry"
     putStrLn "- <Integer> - Delete the entry number"
     putStrLn "Q           - Quit"
