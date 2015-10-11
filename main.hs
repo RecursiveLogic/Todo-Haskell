@@ -30,8 +30,8 @@ delete n (a:as) = do
 delete _ [] = Nothing
 
 main = do
-    putStrLn "\nCommands:"
+    putStrLn "\nList Of Commands:"
     putStrLn "+ <String>  - Add a To-do entry"
     putStrLn "- <Integer> - Delete the entry number"
-    putStrLn "Q           - Quit"
+    putStrLn "Enter 'Q' To Quit"
     prompt []
