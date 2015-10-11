@@ -13,7 +13,7 @@ getCommand ('+':' ':todo) todos = prompt (todo:todos)
 getCommand ('-':' ':num) todos = 
     case delete (read num) todos of
         Nothing -> do
-            putStrLn "No To-do entry matches the given number"
+            putStrLn "No entry matches the given number"
             prompt todos
         Just todos' -> prompt todos'
 getCommand "Q"      todos = return ()
