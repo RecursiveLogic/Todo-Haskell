@@ -35,5 +35,3 @@ main = do
     putStrLn "- <Integer> - Delete the entry number"
     putStrLn "Enter 'Q' To Quit"
     prompt []
-
-{- Random -}
